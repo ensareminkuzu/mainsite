@@ -14,6 +14,7 @@ body
 	min-height: 100vh;
 	background: #000;
 }
+
 section 
 {
 	position: absolute;
@@ -180,3 +181,32 @@ input[type="submit"]:active
 		height: calc(20vw - 2px);
 	}
 }
+.header {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center; /* Başlığı ortada tut */
+  }
+  
+  .swap-icon {
+	position: absolute;
+	right: 0; /* Sağ tarafa hizala */
+	font-size: 1.5em; /* İkon boyutu */
+	color: #0f0; /* İkon rengi */
+	cursor: pointer; /* Tıklanabilir işaretçiyi göster */
+	transition: transform 0.3s; /* Animasyon için */
+	text-decoration: none;
+  }
+  
+  .swap-icon:hover {
+	transform: rotate(180deg); /* Üzerine gelindiğinde döndür */
+  }
+  
+  a {
+  display: inline-flex; /* İçindeki elemanları hizala */
+  align-items: center; /* Dikey hizalama */
+  text-decoration: none; /* Varsayılan alt çizgiyi kaldır */
+}
+  
+  
